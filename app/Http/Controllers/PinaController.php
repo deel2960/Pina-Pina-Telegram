@@ -37,7 +37,7 @@ class PinaController extends Controller
     public function showYacho(Request $request)
     {
         $posts = Pina::where('type', 'yacho')->orderByDesc('updated_at')->get();
-
+    
         if (count($posts) > 0) {
             $headline = $posts->shift();
         } else {

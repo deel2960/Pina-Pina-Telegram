@@ -73,6 +73,37 @@
                     </div>
                 </div>
             </nav>
+            <nav class="navbar navbar-expand-md navbar-dark bg-dark" aria-label="Fourth navbar example">
+                    <div class="collapse navbar-collapse" id="navbarsExample04">
+                        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="{{ route('pina')}}">ホーム</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('pina.pet')}}">ペット</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('pina.bird')}}">野鳥</a>
+                        </li>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="{{ route('pina.bird')}}" data-bs-toggle="dropdown" aria-expanded="false">投稿</a>
+                            <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="{{ route('admin.pina.create')}}">投稿画面</a></li>
+                            <li><a class="dropdown-item" href="{{ route('admin.pina')}}">投稿一覧検索画面</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">プロフィール</a>
+                            <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="{{ route('admin.profile.create')}}">プロフィール画面</a></li>
+                            <li><a class="dropdown-item" href="{{ route('admin.profile.index')}}">プロフィール一覧検索画面</a></li>
+                            </ul>
+                        </li>
+                        </ul>
+                    </div>
+                    </div>
+                </nav>
             {{-- ここまでナビゲーションバー --}}
 
             <main class="py-4">

@@ -29,7 +29,7 @@
                     <div class="form-group row">
                         <label class="col-md-2">種類</label>
                         <div class="col-md-10">
-                            <label><input type="radio" name="type" value="bird">野鳥</label>
+                            <label><input type="radio" name="type" value="yacho">野鳥</label>
                             <label><input type="radio" name="type" value="pet">ペット</label>
                         </div>
                     </div>

@@ -23,7 +23,7 @@
                     <div class="form-group row">
                         <label class="col-md-2">種類</label>
                         <div class="col-md-10">
-                            <label><input type="radio" name="type" value="bird" {{ $pina_form->type == 'bird' ? 'checked' : '' }}>野鳥</label>
+                            <label><input type="radio" name="type" value="yacho" {{ $pina_form->type == 'yacho' ? 'checked' : '' }}>野鳥</label>
                             <label><input type="radio" name="type" value="pet" {{ $pina_form->type == 'pet' ? 'checked' : '' }}>ペット</label>
                         </div>
                     </div>
