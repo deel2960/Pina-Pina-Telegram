@@ -14,8 +14,8 @@
                                         <img src="{{ asset('storage/image/' . $headline->image_path) }}">
                                     @endif
                                 </div>
-                                <div class="title p-2">
-                                    <h1>{{ Str::limit($headline->title, 70) }}</h1>
+                                <div class="name p-2">
+                                    <h1>{{ Str::limit($headline->name, 70) }}</h1>
                                 </div>
                             </div>
                         </div>
@@ -36,8 +36,8 @@
                                 <div class="date">
                                     {{ $post->updated_at->format('Y年m月d日') }}
                                 </div>
-                                <div class="title">
-                                    {{ Str::limit($post->title, 150) }}
+                                <div class="name">
+                                    {{ Str::limit($post->name, 150) }}
                                 </div>
                                 <div class="body mt-3">
                                     {{ Str::limit($post->body, 1500) }}
