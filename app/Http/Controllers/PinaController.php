@@ -8,7 +8,7 @@ use App\Models\Pina;
 
 class PinaController extends Controller
 {
-    public function index(Request $request)
+    public function index()
     {
         $posts = Pina::all()->sortByDesc('updated_at');
 
@@ -46,4 +46,11 @@ class PinaController extends Controller
 
         return view('pina.index', ['headline' => $headline, 'posts' => $posts]);
     }
+
+    public function about()
+    {
+        return view('pina.about');  
+    }
 }
+
+

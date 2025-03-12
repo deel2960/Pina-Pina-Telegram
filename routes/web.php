@@ -45,3 +45,10 @@ Route::get('/', [PublicPinaController::class, 'index'])->name('pina.index');
 Route::get('/pina', [PublicPinaController::class, 'index'])->name('pina');
 Route::get('/pina/pets', [PublicPinaController::class, 'showPets'])->name('pina.pet');
 Route::get('/pina/bird', [PublicPinaController::class, 'showYacho'])->name('pina.bird');
+Route::get('/pina/about', [PublicPinaController::class, 'about'])->name('pina.about');
+
+use App\Http\Controllers\Admin\NewsController;
+Route::controller(NewsController::class)->prefix('admin')->name('admin.')->group(function () {
+    Route::get('news/create', 'add')->name('news.add');
+    Route::post('news/create', 'create')->name('news.create');
+});
